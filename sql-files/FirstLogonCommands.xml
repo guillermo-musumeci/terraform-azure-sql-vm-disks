@@ -1,0 +1,17 @@
+<FirstLogonCommands>
+    <SynchronousCommand>
+        <CommandLine>cmd /c "mkdir C:\script"</CommandLine>
+        <Description>Create the Script directory</Description>
+        <Order>11</Order>
+    </SynchronousCommand>
+    <SynchronousCommand>
+        <CommandLine>cmd /c "copy C:\AzureData\CustomData.bin C:\script\script.ps1"</CommandLine>
+        <Description>Move the CustomData file to the Script directory</Description>
+        <Order>12</Order>
+    </SynchronousCommand>
+    <SynchronousCommand>
+        <CommandLine>cmd /c "Shutdown /r /t 0"</CommandLine>
+        <Description>Restart machine</Description>
+        <Order>13</Order>
+    </SynchronousCommand>
+</FirstLogonCommands>
